@@ -11,6 +11,10 @@
 		D4D737E92B0D0218009CFCEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D737E82B0D0218009CFCEE /* ContentView.swift */; };
 		D4D737EB2B0D0218009CFCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D737EA2B0D0218009CFCEE /* Assets.xcassets */; };
 		D4D737EE2B0D0218009CFCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D737ED2B0D0218009CFCEE /* Preview Assets.xcassets */; };
+		D4D737F52B0D0232009CFCEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D737F42B0D0232009CFCEE /* ViewController.swift */; };
+		D4D737F92B0D02BF009CFCEE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D737F82B0D02BF009CFCEE /* ButtonView.swift */; };
+		D4D737FC2B0D02E0009CFCEE /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D4D737FB2B0D02E0009CFCEE /* YOLOv3Tiny.mlmodel */; };
+		D4D737FE2B0D02EB009CFCEE /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D737FD2B0D02EB009CFCEE /* Detector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		D4D737E82B0D0218009CFCEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D4D737EA2B0D0218009CFCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4D737ED2B0D0218009CFCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4D737F42B0D0232009CFCEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4D737F82B0D02BF009CFCEE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D4D737FB2B0D02E0009CFCEE /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
+		D4D737FD2B0D02EB009CFCEE /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		D4D737E52B0D0218009CFCEE /* MagnifierApp */ = {
 			isa = PBXGroup;
 			children = (
-				D4D737E62B0D0218009CFCEE /* MagnifierAppApp.swift */,
-				D4D737E82B0D0218009CFCEE /* ContentView.swift */,
+				D4D737FF2B0D0324009CFCEE /* SystemSettings */,
+				D4D737F72B0D025B009CFCEE /* View */,
+				D4D737FA2B0D02D7009CFCEE /* ML */,
+				D4D737F62B0D0250009CFCEE /* Datas */,
 				D4D737EA2B0D0218009CFCEE /* Assets.xcassets */,
 				D4D737EC2B0D0218009CFCEE /* Preview Content */,
 			);
@@ -65,6 +75,40 @@
 				D4D737ED2B0D0218009CFCEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4D737F62B0D0250009CFCEE /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				D4D737F42B0D0232009CFCEE /* ViewController.swift */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
+		D4D737F72B0D025B009CFCEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4D737E82B0D0218009CFCEE /* ContentView.swift */,
+				D4D737F82B0D02BF009CFCEE /* ButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4D737FA2B0D02D7009CFCEE /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				D4D737FB2B0D02E0009CFCEE /* YOLOv3Tiny.mlmodel */,
+				D4D737FD2B0D02EB009CFCEE /* Detector.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		D4D737FF2B0D0324009CFCEE /* SystemSettings */ = {
+			isa = PBXGroup;
+			children = (
+				D4D737E62B0D0218009CFCEE /* MagnifierAppApp.swift */,
+			);
+			path = SystemSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D737F52B0D0232009CFCEE /* ViewController.swift in Sources */,
 				D4D737E92B0D0218009CFCEE /* ContentView.swift in Sources */,
+				D4D737FC2B0D02E0009CFCEE /* YOLOv3Tiny.mlmodel in Sources */,
+				D4D737F92B0D02BF009CFCEE /* ButtonView.swift in Sources */,
 				D4D737E72B0D0218009CFCEE /* MagnifierAppApp.swift in Sources */,
+				D4D737FE2B0D02EB009CFCEE /* Detector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +323,7 @@
 				DEVELOPMENT_TEAM = 6STK5CF75S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to detect objects";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +353,7 @@
 				DEVELOPMENT_TEAM = 6STK5CF75S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to detect objects";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
